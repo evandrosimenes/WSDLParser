@@ -2,7 +2,7 @@
 
 Welcome, developer!!
 
-This is an C# (.net 4.6.1) WSDL Parser that generates xml request/response based on it's wsdl schema.
+This is an C# WSDL Parser (.net 4.6.1) that generates xml request/response based on it's wsdl schema.
 
 Since i needed a wsdlparser that generates a xml sample request/response (like soapui does), i have found nothing that simple as possible and decided to develop this by myself and i could get some functional code in a very simple way using a recursive method that read the service schema and outputs a xml string based on it.
 I was so frustrated because a couldn't found anything that really helps me, that i decided to share this code here to help others who could use it and save time.
