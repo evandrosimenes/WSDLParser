@@ -8,6 +8,9 @@ Since i needed a wsdlparser that generates a xml sample request/response (like s
 
 In the sample below, you can parse a wsdl generating an object with all information about the soap ws, in a simplified way, including the request/response xml sample (template).
 
+
+ADD the 2 classes WSDLServiceType and WSDLParser to your c# project.
+
 Code Sample:
 
 string WSDL = "http://pathtowsdl.com.br?WSDL"
