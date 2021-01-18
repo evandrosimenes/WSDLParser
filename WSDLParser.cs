@@ -11,14 +11,14 @@ namespace Six
     {
 
         public static XmlSchemaObjectCollection SchemaItemsRoot { get; set; }
-        public static List<WSDLServiceDescription> Parse(ServiceDescription Description, bool ParamArray)
+        public static List<WSDLServiceType> Parse(ServiceDescription Description, bool ParamArray)
         {
 
-            var Services = new List<WSDLServiceDescription>();
+            var Services = new List<WSDLServiceType>();
 
             foreach(Service service in Description.Services)
             {
-                WSDLServiceDescription wsd = new WSDLServiceDescription();
+                WSDLServiceType wsd = new WSDLServiceType();
                 wsd.name = service.Name;
                 wsd.port = new List<PortWSDL>();
 
