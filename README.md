@@ -11,17 +11,16 @@ In the sample below, you can parse a wsdl generating an object with all informat
 
 
 ADD the 2 classes WSDLServiceType and WSDLParser to your c# project.
+// add using Six; at the top of script
 
 Code Sample:
 
-string WSDL = "http://pathtowsdl.com.br?WSDL"
+string WSDL = "http://pathtowsdl.com.br?WSDL"; //WSDL url
 
 System.Net.WebClient client = new System.Net.WebClient();
 
-System.IO.Stream stream = client.OpenRead(WSDL);
+System.IO.Stream stream = client.OpenRead(WSDL); //open WSDL url
 
-ServiceDescription description = ServiceDescription.Read(stream);
+ServiceDescription description = ServiceDescription.Read(stream); //load service description .net native object.
 
-// add using Six; at the top of script
-
-List<WSDLServiceType> WSDLServices = WSDLParser.Parse(description, false);
+List<WSDLServiceType> WSDLServices = WSDLParser.Parse(description, false); //parse wsdl
